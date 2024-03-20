@@ -74,6 +74,17 @@ purchase = int(input("먹을 음식의 번호를 선택해주세요 1~4"))
 if(purchase == 1):print("3000원");cost(3000)
 elif(purchase == 2 or purchase == 3 or purchase == 4):print("3500원");cost(3500)
 ------------------------------------------------------------------------------
+user = []
+while (True):
+    option = str(input("로그인인가요? 회원가입이신가요?"))
+    if(option == "회원가입"):
+        user.append([str(input("이름")), str(input("닉네임")),str(input("비밀번호"))]);
+    else:
+        nickname = str(input("닉네임:")); 
+        password = str(input("비밀번호:")); 
+        for i in range(len(user)):
+            if(password == user[i][2] and nickname == user[i][1]):
+                print(user[i][0])
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
