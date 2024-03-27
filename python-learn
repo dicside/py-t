@@ -133,4 +133,16 @@ my = student()
 my.drive()
 print(my.name, my.color, my.number)
 ------------------------------------------------------------------------------
+
+
+class student:
+    def drive(self):
+        self.name = 1
+my = student()
+my.name = input("")
+my.color = input("")
+my.number = input("")
+my.drive()
+
+print(my.name, my.color, my.number)
 ------------------------------------------------------------------------------
